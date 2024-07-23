@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("https://images.hdqwalls.com/download/cgi-rendeer-purple-4k-8r-1366x768.jpg");
+    background-size: cover;
+    font-family: 'Fira Code', monospace;
+    color: #d4d4d4;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    padding: 10px 0;
+}
+
+h5 {
+    text-align: justify;
+}
+
+.menu {
+    position: fixed;
+    /* Fija el menú en la ventana del navegador */
+    top: 0;
+    /* Asegura que esté fijo en la parte superior */
+    width: 100%;
+    /* Ocupa todo el ancho de la ventana */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Color de fondo para el menú */
+    z-index: 1000;
+    /* Asegura que esté por encima de otros elementos */
+    transition: top 0.3s ease-in-out;
+    /* Transición suave al cambiar la posición */
+    margin-top: 0;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 0 25px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu ul li a:hover {
+    background-color: #560b5a;
+}
+
+.section {
+    color: rgb(217, 217, 225);
+    padding: 20px;
+    text-align: left;
+    margin: 50px;
+    margin-top: 200px;
+    /* Ajuste según sea necesario */
+    margin-left: 150px;
+    /* Ajuste según sea necesario */
+}
+
+.letra-grande {
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #912185, #fad0c4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section {
+    padding: 100px;
+    margin: 50px 0;
+    color: rgb(169, 169, 178);
+}
+
+#section5 img {
+    border-radius: 50%;
+    margin-bottom: 40px;
+    margin-top: -200px;
+    margin-left: 700px;
+}
+
+#section1 {
+    background: linear-gradient(145deg, rgb(0, 0, 0), rgb(74, 19, 93));
+}
+
+#section2,
+#section5 {
+
+    background-size: cover;
+    text-decoration: none;
+}
+
+#section5 p {
+    text-align: justify;
+}
+
+#section0 {
+    background: linear-gradient(145deg, rgb(0, 0, 0), rgb(21, 3, 27));
+
+}
+
+#section0 .contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#section0 i {
+    margin-right: 10px;
+}
+
+#section0 p {
+    margin: 5px;
+}
+
+.linkedin,
+.github,
+.CV {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.linkedin a,
+.github a,
+.CV a {
+    color: rgba(255, 255, 255, 0.637);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.linkedin i,
+.github i,
+.CV i {
+    margin-right: 8px;
+    color: antiquewhite;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery-item img {
+    display: grid;
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.description {
+    display: grid;
+}
+
+.gallery-container a {
+    text-decoration: none;
+    /* Quita la decoración del enlace */
+}
+
+.gallery-container a h5 {
+    color: rgba(255, 255, 255, 0.637);
+    
+}
+
+.enlaces {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+/* Estilos para el menú */
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    transition: top 0.3s ease-in-out;
+    padding: 10px;
+}
+
+/* Estilos del menú en pantallas grandes */
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.menu-list li {
+    margin: 0 15px;
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.menu-list li a:hover {
+    background-color: #560b5a;
+}
+
+/* Estilos del botón de hamburguesa */
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-list {
+        display: none; /* Oculta el menú por defecto en pantallas pequeñas */
+        flex-direction: column; /* Coloca los elementos en una columna */
+        align-items: center; /* Centra los elementos verticalmente */
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 60px; /* Ajusta según el tamaño del botón de hamburguesa */
+        left: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Agrega una sombra para destacarlo */
+    }
+
+    .menu-list.show {
+        display: flex; /* Muestra el menú cuando se activa */
+    }
+
+    .menu-toggle {
+        display: block; /* Muestra el ícono de hamburguesa */
+    }
+    .menu-toggle i{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+}
+
+/* Estilos para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .menu-list li {
+        margin: 10px 0; /* Ajusta el margen entre los elementos */
+    }
+
+    .menu-toggle {
+        font-size: 1.2em; /* Ajusta el tamaño del ícono de hamburguesa */
+    }
+}
+
+#section2 a{
+    padding: 10px;
+}
